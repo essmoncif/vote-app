@@ -10,3 +10,4 @@ export interface Voter extends Document{
     readonly password: string;
     readonly email: string; 
 }
+

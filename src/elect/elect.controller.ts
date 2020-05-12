@@ -1,5 +1,6 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body, Get, Req, Param } from '@nestjs/common';
 import { ElectService } from './elect.service';
+
 
 @Controller('elect')
 export class ElectController {
@@ -16,7 +17,19 @@ export class ElectController {
     }
 
     @Post('vote')
-    async voteOnElect(@Body('id') id: string){
-        return await this.electService.voteOnElect(id);
+    async voteOnElect(@Body('id') id: string, @Body('idVoter') idVoter : string){
+        return await this.electService.voteOnElect(id, idVoter);
     }
+
+    @Get('all')
+    async getAllElect(){
+        return this.electService.getAllElect();
+    }
+
+    @Get(':id')
+    async getElectById(@Param('id') id :string ){
+        return this.electService.getElectById(id);
+    }
+
+    
 }

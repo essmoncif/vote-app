@@ -7,3 +7,4 @@ export interface Elect extends Document{
     numberVote: number;
 }
 
+

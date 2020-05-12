@@ -33,4 +33,4 @@ VoterSchema.pre('save', async function(next: mongoose.HookNextFunction){
     }catch(err){
         return next(err);
     }
-})
+}) 

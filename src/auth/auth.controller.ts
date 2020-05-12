@@ -1,4 +1,4 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body, Get, Param } from '@nestjs/common';
 import { VoterService } from 'src/shared/voter.service';
 
 @Controller('auth')
@@ -25,5 +25,10 @@ export class AuthController {
     ){
         return await this.voterService.addUser(nom, prenom, dateNai, email, password, job);
     }
+
+    @Get(':id')
+    async getUserById(@Param('id') id : string){
+        return await this.voterService.getUserById(id);
+    }
 }
- 
+  

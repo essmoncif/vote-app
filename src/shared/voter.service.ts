@@ -55,6 +55,7 @@ export class VoterService{
 
         if(await bcrypt.compare(password, user.password)){
             if (email == user.email){
+                
                 return user;
             }   
         }

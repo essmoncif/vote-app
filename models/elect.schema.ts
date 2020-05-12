@@ -8,4 +8,4 @@ export const ElectSchema = new mongoose.Schema({
         type: Number,
         default : 0
     },
-}) 
+})  
