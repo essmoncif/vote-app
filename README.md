@@ -45,7 +45,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Author
 
-- Author - [Moncif Essaoudi, Marouan Boudarba, Ayoub El othmani]
+- Author - [Moncif Essaoudi, Marouan Boudarba, Ayoub El atmani]
 
 
 ## License
