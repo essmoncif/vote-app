@@ -13,8 +13,7 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
-$ npm run start
+
 
 # watch mode backend 
 $ npm run start:dev
@@ -48,6 +47,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 - Author - [Moncif Essaoudi, Marouan Boudarba, Ayoub El atmani]
 
 
-## License
 
-  Nest is [MIT licensed](LICENSE).
