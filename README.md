@@ -7,6 +7,11 @@ This application is for secure election vote, we have used to encrypt the voting
 ## Installation
 
 ```bash
+# install backend packages
+$ npm install
+
+# install frontend packages
+$ cd client
 $ npm install
 ```
 
